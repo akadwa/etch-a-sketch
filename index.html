@@ -11,19 +11,20 @@
 <body>
     <nav>
         <p>Etch-A-Sketch</p>
+        <div>
+            <a href="index.html">Black And White</a>
+            <a href="colors.html">Colors</a>
+        </div>
     </nav>
     <main>
-        <div class="buttonContainer">
-            <button>Black And White</button>
-            <button>Colors</button>
-            <button>Reset</button>
-        </div>
-        <div class="grid">
-
-        </div>
-        <div class="sliderContainer">
+        <div class="sliderAndButtonContainer">
             <p>- Size +</p>
             <input type="range" min="16" max="100" value="50" class="slider" id="myRange">
+            <button id="applyButton">Apply</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="grid">
+            <!-- Empty div for the grid to be appended to. -->
         </div>
     </main>
     <footer>
