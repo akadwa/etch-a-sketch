@@ -68,7 +68,7 @@ main {
     background-color: #D2D2D2;
 }
 
-/* Slider and Buttons Styles */
+/* Slider and Button Container Styles */
 .sliderAndButtonContainer {
     display: flex;
     flex-direction: column; 
@@ -76,6 +76,7 @@ main {
     padding: 40px;
 }
 
+/* Slider Styles */
 .slider {
     -webkit-appearance: none; 
     appearance: none;
@@ -118,7 +119,7 @@ main {
     cursor: pointer; 
 }
 
-
+/* Button Styles */
 #sizeText {
     font-size: 27px;
     margin: 7px 0;
@@ -149,7 +150,7 @@ button {
 .row,
 .column {
     flex-grow: 1;
-    border: 1px solid black;
+    outline: 1px solid black !important;
 }
 
 .row {
