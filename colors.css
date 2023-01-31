@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Solitreo&display=swap');
+
+* {
+    font-family: 'Solitreo', cursive;
+    font-weight: 900;
+    letter-spacing: 0.75px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+}
+
+
+/* Navbar Styles */
+.navContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #BDBDBD;
+    padding: 30px 0px 20px;
+    width: 100%;
+}
+
+#headerText {
+    font-size: 45px;
+    margin: 0;
+}
+
+.links {
+    font-size: 23px;
+    display: flex;
+    gap: 40px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+#blackWhiteText {
+    /* black-to-white gradient effect */
+    background-image: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(173,173,173,1) 35%, rgba(224,224,224,1) 61%, rgba(255,255,255,1) 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+    /* black text outline */
+    -webkit-text-stroke: 0.4px black;
+}
+
+#rainbowText {
+    /* rainbow text effect */
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);   
+    -webkit-background-clip: text;
+    color: transparent;
+    /* black text outline */
+    -webkit-text-stroke: 0.4px black;
+}
+
+/* Main Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: #D2D2D2;
+}
+
+/* Slider and Button Container Styles */
+.sliderAndButtonContainer {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    padding: 40px;
+}
+
+/* Slider Styles */
+.slider {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 100%;
+    height: 13px;
+    border-radius: 5px;
+    background: white;
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+}
+
+  /* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 25px; 
+    height: 25px;
+    border-radius: 50%; 
+    background: black; 
+    cursor: pointer; 
+}
+  
+.slider::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    border-radius: 50%;
+    background: black; 
+    cursor: pointer; 
+}
+
+/* Button Styles */
+#sizeText {
+    font-size: 27px;
+    margin: 7px 0;
+}
+
+#displaySize {
+    font-size: 22px;
+    margin: 13px 0px 3px;
+}
+
+button {
+    font-size: 18px;
+    padding: 2px 10px;
+}
+
+#applyButton {
+    margin: 0px 0 20px;  
+}
+
+#resetButton {
+    margin-top: 20px;
+}
+
+/* Grid Styles */
+.grid {
+    width: 400px;
+    min-height: 400px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.row,
+.column {
+    flex-grow: 1;
+    outline: 1px solid black !important;
+}
+
+.row {
+    display: flex;
+}
+
+
+/* Footer Styles */
+footer {
+    font-size: 18px;
+    width: 100%;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    background-color: #BDBDBD;
+}

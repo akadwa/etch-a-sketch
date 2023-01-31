@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch-A-Sketch</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <nav>
+        <div class="navContainer">
+            <p id="headerText">Etch-A-Sketch</p>
+            <div class="links">
+                <a href="index.html" id="blackWhiteText">Black And White</a>
+                <a href="colors.html" id="rainbowText">Colors</a>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="sliderAndButtonContainer">
+            <p id="sizeText">- Size +</p>
+            <input type="range" min="10" max="50" value="16" class="slider" id="myRange">
+            <p id="displaySize">16</p>
+            <button id="applyButton">Apply</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="grid">
+            <!-- Empty div for the grid to be appended to. -->
+        </div>
+    </main>
+    <footer>
+        <p>Copyright &copy Azhar Kadwa 2023</p>
+    </footer>
+    
+</body>
+</html>
