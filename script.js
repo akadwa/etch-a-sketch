@@ -3,6 +3,7 @@ const grid = document.querySelector('.grid');
 const slider = document.querySelector('.slider');
 const apply = document.querySelector('#applyButton');
 const reset = document.querySelector('#resetButton');
+const displaySize = document.querySelector('#displaySize');
 
 // DEFAULT GRID SIZE
 let gridSize = 16;
@@ -38,6 +39,13 @@ apply.addEventListener('click', () => {
 reset.addEventListener('click', () => {
     grid.innerHTML = " ";
     addCells();
+})
+
+// EVENT LISTENER for the slider input
+//returns the new range in the displaySize div
+slider.addEventListener('mouseup', () => {
+    displaySize.innerHTML = ' ';
+    displaySize.innerHTML = slider.value;
 })
 
 addCells();

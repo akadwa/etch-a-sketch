@@ -125,13 +125,18 @@ main {
     margin: 7px 0;
 }
 
+#displaySize {
+    font-size: 22px;
+    margin: 13px 0px 3px;
+}
+
 button {
     font-size: 18px;
     padding: 2px 10px;
 }
 
 #applyButton {
-    margin: 18px 0 25px;  
+    margin: 0px 0 20px;  
 }
 
 #resetButton {
