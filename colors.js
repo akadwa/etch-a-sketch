@@ -8,6 +8,9 @@ const displaySize = document.querySelector('#displaySize');
 // DEFAULT GRID SIZE
 let gridSize = 16;
 
+// ARRAY of HEX numbers and letters
+const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+
 // FUNCTION to add cells to the grid as well as EVENT LISTENER to change background color on mouseover
 function addCells() {
     for (i = 0; i < gridSize; i++){
@@ -20,11 +23,20 @@ function addCells() {
             row.appendChild(column);
             // EVENT LISTENER for mouseover on individual cells
             column.addEventListener('mouseover', () => {
-                column.style.backgroundColor = "black";
-                column.style.opacity = (parseFloat(column.style.opacity) || 0) + 0.25;
+                let hexColor = "#";
+                for (let i = 0; i < 6; i++) {
+                    hexColor += getRandomHex();
+                };
+                column.style.backgroundColor = hexColor;
+                // column.style.opacity = (parseFloat(column.style.opacity) || 0) + 0.25;
             })
         }  
     }
+};
+
+// FUNCTION to get a random color
+function getRandomHex() {
+    return hex[Math.floor(Math.random() * hex.length)];
 };
 
 // EVENT LISTENER for click on apply button
